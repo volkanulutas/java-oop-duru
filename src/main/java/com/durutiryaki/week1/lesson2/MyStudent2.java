@@ -30,7 +30,7 @@ public class MyStudent2 {
         System.out.println("Öğrenci Adı: " + name + " Öğrencinin Soyadı: " + surname + "Mezuniyet Tarihi: " + graduationDate);
     }
 
-    // win + insert
+    // alt + insert = generating getter and setter shortcut menu.
     // getter, setter.
     public int getId() {
         return id;
