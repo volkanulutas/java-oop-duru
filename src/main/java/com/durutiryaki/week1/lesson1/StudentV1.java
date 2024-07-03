@@ -1,4 +1,4 @@
-package com.durutiryaki.week1.lesson;
+package com.durutiryaki.week1.lesson1;
 
 import java.util.Date;
 
