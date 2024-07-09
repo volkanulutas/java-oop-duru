@@ -1,7 +1,10 @@
 package com.durutiryaki.week1.homework2;
 
+
+// import java.time.LocalDate;
+
 import java.time.LocalDate;
-import java.util.Scanner;
+import java.util.*; // Tüm java.util paketini yükler. Scanner dışında da bir türü kullanmadığımız sınıf gelmiş olur.
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +22,16 @@ public class Main {
         book1.setCurrentPageNumber(userInput);
         book1.viewDetails();
         book1.read();
+        System.out.println("******************");
+        //
+        Book book2 = new Book("Olabilir", "İzzet Güllü",  "Psyhcology", LocalDate.of(2024, 07, 01), "X Yayınları", "ABC123", 300, 0);
+        System.out.println("Lütfen şu an bulunduğunuz sayfayı giriniz: ");
+        int userCurrentPage = scanner.nextInt();
+        book2.setCurrentPageNumber(userCurrentPage);
+
+        book2.viewDetails();
+        book2.read();
+
 
     }
 }

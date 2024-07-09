@@ -9,7 +9,6 @@ public class Main {
 
         Manager mgr = new Manager("Jane Smith", 102, 75000, 20000);
         mgr.displayDetails();
-
         System.out.println();
 
         Intern intern = new Intern("Alice Brown", 103, 20, 120); // 20 per hour, 120 hours worked

@@ -4,13 +4,36 @@ import java.time.LocalDate;
 
 public class Book {
     private String title;
+
     private String author;
+
     private String type;
+
     private LocalDate publicationDate;
+
     private String publisher;
+
     private String isbn;
+
     private int totalPageNumber;
+
     private int currentPageNumber;
+
+    public Book() {
+        // default constructor.
+    }
+
+    public Book(String title, String author, String type, LocalDate publicationDate, String publisher, String isbn, int totalPageNumber,
+                int currentPageNumber) {
+        this.title = title;
+        this.author = author;
+        this.type = type;
+        this.publicationDate = publicationDate;
+        this.publisher = publisher;
+        this.isbn = isbn;
+        this.totalPageNumber = totalPageNumber;
+        this.currentPageNumber = currentPageNumber;
+    }
 
     public String getTitle() {
         return title;
@@ -44,7 +67,7 @@ public class Book {
         this.publicationDate = publicationDate;
     }
 
-    public String getPublisher() { return publisher; }
+    public String getPublisher() {return publisher;}
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
@@ -75,23 +98,17 @@ public class Book {
     }
 
     public void viewDetails() {
-        System.out.println("Details of " + getTitle() +
-                "\nTitle: " + getTitle() +
-                "\nAuthor: " + getAuthor() +
-                "\nType: " + getType() +
-                "\nPublication Date: " + getPublicationDate() +
-                "\nPublisher: " + getPublisher() +
-                "\nISBN: " + getIsbn() +
-                "\nTotal Page Number: " + getTotalPageNumber());
+        System.out.println(
+                "Details of " + getTitle() + "\nTitle: " + getTitle() + "\nAuthor: " + getAuthor() + "\nType: " + getType() + "\nPublication Date: "
+                        + getPublicationDate() + "\nPublisher: " + getPublisher() + "\nISBN: " + getIsbn() + "\nTotal Page Number: " + getTotalPageNumber());
     }
-
 
     public void read() {
         if (0 < currentPageNumber || currentPageNumber <= totalPageNumber) {
             System.out.println("I am currently at page number  " + currentPageNumber + ".");
         } else if (currentPageNumber == 0) {
             System.out.println("I haven't started to read the book yet.");
-        }else {
+        } else {
             System.out.println("You entered invalid page number.");
         }
 

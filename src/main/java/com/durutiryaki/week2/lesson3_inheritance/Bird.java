@@ -1,6 +1,7 @@
 package com.durutiryaki.week2.lesson3_inheritance;
 
 public class Bird extends Animal {
+
     private boolean canFly;
 
     public Bird(String name, int age, boolean canFly) {

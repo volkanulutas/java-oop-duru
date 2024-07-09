@@ -13,6 +13,6 @@ public class Main2 {
         // getter setter
         student.setEmail("durutiryaki@gmail.com");
         // student.setPassword("@123Ext01");
-        System.out.println(student.getEmail() + " " + student.getPassword());
+        // System.out.println(student.getEmail() + " " + student.getPassword());
     }
 }
