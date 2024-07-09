@@ -24,9 +24,7 @@ public class Book {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
+    public void setAuthor(String author) { this.author = author; }
 
     public String getType() {
         return type;
@@ -88,9 +86,9 @@ public class Book {
 
     public void read() {
         if (0 < currentPageNumber || currentPageNumber <= totalPageNumber) {
-            System.out.println("I am currently at page number  " + currentPageNumber + ".");
+            System.out.println("You are currently at page number  " + currentPageNumber + ".");
         } else if (currentPageNumber == 0) {
-            System.out.println("I haven't started to read the book yet.");
+            System.out.println("You haven't started to read the book yet.");
         }else {
             System.out.println("You entered invalid page number.");
         }
