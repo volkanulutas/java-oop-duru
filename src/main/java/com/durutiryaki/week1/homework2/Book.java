@@ -44,9 +44,7 @@ public class Book {
         this.publicationDate = publicationDate;
     }
 
-    public String getPublisher() {
-        return publisher;
-    }
+    public String getPublisher() { return publisher; }
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
@@ -77,7 +75,14 @@ public class Book {
     }
 
     public void viewDetails() {
-        System.out.println("Details of " + getTitle() + "\nTitle: " + getTitle() + "\nAuthor: " + getAuthor() + "\nType: " + getType() + "\nPublication Date: " + getPublicationDate() + "\nPublisher: " + getPublisher() + "\nISBN: " + getIsbn() + "\nTotal Page Number: " + getTotalPageNumber());
+        System.out.println("Details of " + getTitle() +
+                "\nTitle: " + getTitle() +
+                "\nAuthor: " + getAuthor() +
+                "\nType: " + getType() +
+                "\nPublication Date: " + getPublicationDate() +
+                "\nPublisher: " + getPublisher() +
+                "\nISBN: " + getIsbn() +
+                "\nTotal Page Number: " + getTotalPageNumber());
     }
 
 
@@ -86,6 +91,8 @@ public class Book {
             System.out.println("I am currently at page number  " + currentPageNumber + ".");
         } else if (currentPageNumber == 0) {
             System.out.println("I haven't started to read the book yet.");
+        }else {
+            System.out.println("You entered invalid page number.");
         }
 
     }
