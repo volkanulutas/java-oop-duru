@@ -2,16 +2,22 @@ package com.durutiryaki.week4.lesson1_inheritance_employee;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Duru Tiryaki", 1, "CEO"); // cntrl + P show available parameters shortcut.
-        employee1.introduce();
-        Manager manager2 = new Manager("Tarık Karşı", 7, "İnşaat Proje/Uygulama", 2);
-        manager2.introduce();
-        Engineer engineer5 = new Engineer("Nehir Ağca", 8, "İnşaat Proje/Uygulama", "İnşat Mühendisi");
-        engineer5.introduce();
-        Engineer engineer6 = new Engineer("Taylan Çelik", 9, "İnşaat Proje/Uygulama", "İnşaat Mühendisi");
-        engineer6.introduce();
-        Employee employee2 = new Employee("Fatma Kalaycı", 10, "Genel İşler");
-        employee2.introduce();
+        Employee employee1 = new Employee("Duru Tiryaki", 1, "CEO", "leadership"); // cntrl + P show available parameters shortcut.
+        //employee1.introduce();
+        Manager manager2 = new Manager("Tarık Karşı", 7, "İnşaat Proje/Uygulama","managing constuction department", 2);
+        //manager2.introduce();
+        Engineer engineer5 = new Engineer("Nehir Ağca", 8, "İnşaat Proje/Uygulama", "plan, design, and supervise the construction and maintenance of building and infrastructure projects", "İnşat Mühendisi");
+        //engineer5.introduce();
+        Engineer engineer6 = new Engineer("Taylan Çelik", 9, "İnşaat Proje/Uygulama","controlling and licensing issues", "İnşaat Mühendisi");
+        //engineer6.introduce();
+        Employee employee2 = new Employee("Fatma Kalaycı", 10, "Genel İşler", "cleaning");
+        //employee2.introduce();
+        employee1.performTask();
+        engineer5.performTask();
+        manager2.performTask();
+        engineer6.performTask();
+        employee2.performTask();
+
         /*
         Manager manager1 = new Manager("Ahmet Yılmaz", 2, "Yazılım Mühendisliği", 4);
         manager1.introduce();

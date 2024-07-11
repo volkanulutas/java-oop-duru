@@ -5,16 +5,18 @@ public class Employee {
     private String name;
     private int id;
     private String department;
+    private String task;
 
     // constructor (no parameter, or lots of parameters.
     public Employee() {
         // default constructor.
     }
 
-    public Employee(String name, int id, String department) {
+    public Employee(String name, int id, String department, String task) {
         this.name = name;
         this.id = id;
         this.department = department;
+        this.task = task;
     }
     // getter setter
     public String getName() {
@@ -40,6 +42,15 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    public String getTask() {
+        return task;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
+    }
+
     // functionality
 
     public void introduce(){
@@ -48,5 +59,11 @@ public class Employee {
         System.out.println("İsim: " + this.getName() +" Sicil No: " + this.getId() +" Bölüm : " + this.getDepartment());
         System.out.println("-----------------\n");
     }
+
+    public void performTask() {
+        System.out.println(this.getName() + " performs " + this.getTask() + ".");
+    }
+
+
 }
 

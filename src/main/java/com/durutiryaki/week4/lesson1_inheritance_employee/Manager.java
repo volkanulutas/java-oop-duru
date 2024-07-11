@@ -8,8 +8,8 @@ public class Manager extends Employee  {
         // default constructor.
     }
 
-    public Manager(String name, int id, String department, int teamSize) {
-        super(name, id, department);
+    public Manager(String name, int id, String department, String task, int teamSize) {
+        super(name, id, department, task);
         this.teamSize = teamSize;
     }
 
@@ -25,5 +25,11 @@ public class Manager extends Employee  {
     public void introduce() {
         super.introduce();
         System.out.println("YÖNETİCİ - Yönetilen Kişi Sayısı: " + this.teamSize);
+    }
+
+    @Override
+    public void performTask() {
+        super.performTask();
+        System.out.println("Managing people size: " + teamSize);
     }
 }

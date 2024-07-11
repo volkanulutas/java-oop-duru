@@ -4,8 +4,8 @@ public class Engineer extends Employee {
     private String speciality;
 
     // contructor with parameter.
-    public Engineer(String name, int id, String department, String speciality) {
-        super(name, id, department);
+    public Engineer(String name, int id, String department,String task, String speciality) {
+        super(name, id, department, task);
         this.speciality = speciality;
     }
 
@@ -26,5 +26,11 @@ public class Engineer extends Employee {
         System.out.println("İsim: "+ super.getName() + " Sicil No: "+ super.getId() + " Bölüm: "+ super.getDepartment() + " Uzmanlık Alanı: "+ this.speciality);
 
         System.out.println("-----------------\n");
+    }
+
+    @Override
+    public void performTask() {
+        super.performTask();
+        System.out.println("Speciality: " + speciality);
     }
 }
