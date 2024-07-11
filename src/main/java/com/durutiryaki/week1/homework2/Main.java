@@ -24,13 +24,15 @@ public class Main {
         book1.read();
         System.out.println("******************");
         //
+        // TODO: aşağıdaki kodda uyumsuzluk var, sonra bak.
+        /*
         Book book2 = new Book("Olabilir", "İzzet Güllü",  "Psyhcology", LocalDate.of(2024, 07, 01), "X Yayınları", "ABC123", 300, 0);
         System.out.println("Lütfen şu an bulunduğunuz sayfayı giriniz: ");
         int userCurrentPage = scanner.nextInt();
         book2.setCurrentPageNumber(userCurrentPage);
 
         book2.viewDetails();
-        book2.read();
+        book2.read();*/
 
 
     }
