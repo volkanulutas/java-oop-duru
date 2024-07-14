@@ -53,10 +53,19 @@ public class Formula1PortalImpl implements Formula1Portal{
             if (raceId == race.getId()) {
                 System.out.println("Yarış Id: " + race.getId() + " Yarış Adı: " + race.getName() + " Yarış Açıklaması: " + race.getDescription());
             }
+
         }
         if (raceList.size() == 0) {
             System.out.println("Hiç yarış oluşturulmadı.");
         }
         System.out.println("------");
+        System.out.println("Takımlar: ");
+        for(Team team : teamList) {
+            System.out.println("İsim: " + team.getName() + " ID: " + team.getId() + " Description: " + team.getDescription() );
+        }
+        System.out.println("Riders: ");
+        for ( Rider rider: riderList) {
+            System.out.println("İsim: " + rider.getName() + " ID: " + rider.getId() + " Doğum  Yılı: " + rider.getYearOfBirth());
+        }
     }
 }
