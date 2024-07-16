@@ -1,4 +1,6 @@
-package com.durutiryaki.week6.week6_file_operations;
+package com.durutiryaki.week6.week6_file_operations_txt.week6_file_operations_dat;
+
+import java.io.Serializable;
 
 public class Student implements Serializable {
     private int id;
