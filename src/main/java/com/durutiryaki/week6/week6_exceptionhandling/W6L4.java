@@ -1,12 +1,14 @@
 package com.durutiryaki.week6.week6_exceptionhandling;
 
 public class W6L4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try {
             validateAge(15);
-        } catch (Exception e) {
-            System.out.println("Exception caught: " + e.getMessage());
+        }catch (Exception ex){
+            System.out.println(ex.getMessage());
         }
+
+        System.out.println("end of");
     }
 
     static void validateAge(int age) throws Exception {

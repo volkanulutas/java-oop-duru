@@ -6,6 +6,8 @@ public class W6L5 {
             checkAge(15);
         } catch (InvalidAgeException e) {
             System.out.println("Exception caught: " + e.getMessage());
+        }catch (Exception e){
+            System.out.println("");
         }
     }
 
