@@ -1,4 +1,4 @@
-package com.durutiryaki.week6_exceptionhandling;
+package com.durutiryaki.week6.week6_exceptionhandling;
 
 public class W6L5 {
     public static void main(String[] args) {
